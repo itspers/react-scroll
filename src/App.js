@@ -74,6 +74,7 @@ export default function App() {
           <div
             ref={headerRef}
             style={{
+              height: initialHeight + 'px',
               transform: 'translateY(' + compensation + 'px)',
             }}
           >
