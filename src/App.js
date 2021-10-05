@@ -51,8 +51,10 @@ export default function App() {
 
   useEffect(() => {
     innerBody.current.addEventListener('scroll', onScroll);
-    calcInitialScrolls();
-    onScroll();
+    setTimeout(() => {
+      calcInitialScrolls();
+      onScroll();
+    }, 50);
   }, []);
 
   return (
